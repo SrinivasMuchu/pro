@@ -144,16 +144,18 @@ html {
 }
 
 .service-page-bottom1 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
-    align-items: flex-start; */
-    display: flex;
+    align-items: flex-start;
+    /* display: flex;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     box-sizing: border-box;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center; */
+    /* justify-content: space-between; */
 }
 
 .service-page-bottom2 {
@@ -169,7 +171,7 @@ html {
     width: 500px;
     border: 1px solid #707070;
     background: white;
-    word-break: break-all;
+    /* word-break: break-all; */
     /* box-sizing: border-box; */
 }
 
@@ -221,8 +223,9 @@ opacity: 1;
 }
 
 .cont3{
-    /* height: 360px; */
-    width: 20%;
+    height: 400px;
+    width: 350px;
+    word-break: break-all;
 }
 
 
@@ -387,6 +390,69 @@ opacity: 1;
     display: none;
 }
 
+
+/* training */
+.training-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+.training-cont-head-drop{
+    width: 100%;
+    text-align: left;
+    color: red;
+    font: normal normal normal 32px/48px Lato;
+    font-weight: 600;
+
+}
+.training-cont-head-drop-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 12px;
+    font: normal normal normal 18px/32px Lato;
+    color: skyblue;
+}
+.training-cont-head-drop-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: normal normal normal 24px/40px Lato;
+    letter-spacing: 0.48px;
+    color: #130D63;
+    opacity: 1;
+}
+.training-cont-head-drop-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.training-cont-head-drop-img img{
+    width: 350px;
+    height: 250px;
+}
+@media screen  and (max-width:1500px) {
+    .service-page-bottom1 {
+       
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        /* justify-content: space-between; */
+    }
+}
 @media screen and (max-width:1050px){
     .get-in-touch-form {
         display: flex;
@@ -403,6 +469,9 @@ opacity: 1;
     }
     .home-navs{
         display: none;
+    }
+    .training-cont{
+        width: 90%;
     }
 }
 
@@ -455,5 +524,10 @@ opacity: 1;
         flex-direction: column;
         gap: 25px;
     
+    }
+}
+@media screen and (max-width:800px){
+    .cont3{
+        height: auto;
     }
 }
